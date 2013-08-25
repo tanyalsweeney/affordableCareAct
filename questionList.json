@@ -1,0 +1,365 @@
+[
+    {
+	"name" : "identity",
+	"required" : [ "id0010", "id0030" ],
+	"questions" : [
+	    {
+		"label" : "id0010",
+		"text" : "First Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : "span3 new-line"
+	    },{
+		"label" : "id0020",
+		"text" : "Middle Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : "span2"
+	    },{
+		"label" : "id0030",
+		"text" : "Last Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : "span3"
+	    },{
+		"label" : "id0040",
+		"text" : "Suffix",
+		"dataType": "string",
+		"inputType" : "select",
+		"cssClass" : "span2",
+		"answerOptions" : [
+		    "Sr",
+		    "jr",
+		    "III",
+		    "IV"
+		]
+	    },{
+		"label" : "id0050",
+		"text" : "Client ID Number (if known)",
+		"dataType": "integer",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0060",
+		"text" : "Street address where you live",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0070",
+		"text" : "City",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0080",
+		"text" : "State",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "span2"
+	    },{
+		"label" : "id0090",
+		"text" : "Zip Code",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "span2"
+	    },{
+		"label" : "id0100",
+		"text" : "Preferred Phone Number",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0110",
+		"text" : "Mailing Address (if different)",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0120",
+		"text" : "City",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    },{
+		"label" : "id0130",
+		"text" : "State",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "span2"
+	    },{
+		"label" : "id0140",
+		"text" : "Zip Code",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "span2"
+	    },{
+		"label" : "id0150",
+		"text" : "Other Phone Number",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "new-line span3"
+	    }
+	]
+    },{
+	"name" : "householdMembers",
+	"required" : [ "hm0010", "hm0030", "hm0050", "hm0070", "hm0080", "hm0100" ],
+	"multiple" : "true",
+	"questions" : [
+  	    {
+		"label" : "hm0010",
+		"text" : "First Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0020",
+		"text" : "Middle Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0030",
+		"text" : "Last Name",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0040",
+		"text" : "Suffix",
+		"dataType": "string",
+		"inputType" : "select",
+		"cssClass" : "",
+		"answerOptions" : [
+		    "Sr",
+		    "jr",
+		    "III",
+		    "IV"
+		]
+	    },{
+		"label" : "hm0050",
+		"text" : "Sex M or F",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "",
+		"answerOptions" : [
+		    "m", "M",
+		    "f", "F"
+		]
+	    },{
+		"label" : "hm0060",
+		"text" : "How is this person related to you?",
+		"dataType": "string",
+		"inputType" : "text",
+		"default" : "Myself",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0070",
+		"text" : "Date of Birth",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0080",
+		"text" : "Check if you want benefits for this person",
+		"dataType": "boolean",
+		"inputType" : "text",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0090",
+		"text" : "Social Security Number",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0100",
+		"text" : "Check if US Citezen",
+		"dataType": "boolean",
+		"inputType" : "checkbox",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0120",
+		"text" : "Race",
+		"dataType": "string",
+		"inputType" : "text",
+		"validate" : "^[A-Za-z]+$",
+		"cssClass" : ""
+	    },{
+		"label" : "hm0130",
+		"text" : "Tribe Name (\"for American Indians and Alaska Natives\")",
+		"dataType": "string",
+		"inputType" : "text",
+		"cssClass" : "line-end"
+	    },{
+	    	"label" : "hm0140",
+	    	"text" : "Check if ethnic background is Hispanic or Latino",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0150",
+	    	"text" : "Check any household members who got cash, food, or medical assistance from another state, tribe or other source.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0160",
+	    	"text" : "Check any household members who live outside Washington State.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0170",
+	    	"text" : "Check any household members who are sponsored aliens",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0180",
+	    	"text" : "Check any household members who are age 16 or older in high school or a GED program.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0190",
+	    	"text" : "Check any household members who are attending college or a trade school.",
+	    	"dataType" : "string",
+	    	"inputType" : "text",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0200",
+	    	"text" : "Check any household members who are temporarily out of your home.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0210",
+	    	"text" : "Check any household members who served in the military.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0220",
+	    	"text" : "Check any household members who are dependents or spouses of someone who served in the military.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0230",
+	    	"text" : "Check any household members who are fleeing from the law to avoid going to court or jail for a felony crime.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0240",
+	    	"text" : "I am living in (own house or apartment, group home, other - please describe):",
+	    	"dataType" : "string",
+	    	"inputType" : "text",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0250",
+	    	"text" : "Marital Status:",
+	    	"dataType" : "string",
+	    	"inputType" : "select",
+	    	"cssClass" : "",
+	    	"answerOptions" : [
+	    		"Single",
+	    		"Married",
+	    		"Divorced",
+	    		"Separated",
+	    		"In a Registered Domestic Partnership"
+	    	]
+	    },{
+	    	"label" : "hm0260",
+	    	"text" : "Do you or any members of your household have health insurance of any kind, whether state or private?",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0270",
+	    	"text" : "Check any household members who plan to enter, are in, or recently left a medical facility such as a hospital or nursing home.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0280",
+	    	"text" : "Check all the household members who have Medicare (not DSHS medical).",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0290",
+	    	"text" : "Check all the household members who have Tricare.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0300",
+	    	"text" : "Check all the household members who have Long Term Care Insurance.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0310",
+	    	"text" : "Check all the household members who have Indian Health Services.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "hm0320",
+	    	"text" : "For household members who have other health insurance, please tell us what type they have.",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    }
+	]
+    },{
+    	"name" : "income",
+		"required" : [ ],
+		"questions" : [
+		{
+	    	"label" : "incomeHaveAnnuities",
+	    	"text" : "Does anyone in your household own any annuities?",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "incomeAnnuityOwner",
+	    	"text" : "Which family member owns the annuity?",
+	    	"dataType" : "text",
+	    	"inputType" : "select",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "incomeAnnuityCompany",
+	    	"text" : "What company or institution issued the annuity?",
+	    	"dataType" : "string",
+	    	"inputType" : "text",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "incomeAnnuityValue",
+	    	"text" : "What is the annuity amount or value? Round to the nearest whole dollar.",
+	    	"dataType" : "int",
+	    	"inputType" : "text",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "incomeAnnuityMonthyIncome",
+	    	"text" : "What is the annuity monthly income? Round to the nearest whole dollar.",
+	    	"dataType" : "int",
+	    	"inputType" : "text",
+	    	"cssClass" : ""
+	    },{
+	    	"label" : "incomeAnnuityAddAnotherAnnuity",
+	    	"text" : "Add another annuity?",
+	    	"dataType" : "boolean",
+	    	"inputType" : "checkbox",
+	    	"cssClass" : ""
+	    }
+		]
+	}
+]
